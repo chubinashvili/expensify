@@ -48,14 +48,15 @@ export const editExpense = ((id, updates) => ({
     updates
 }));
 
+export const startEditExpense 
+
 // SET_EXPENSES
 export const setExpenses = (expenses) => ({
     type: 'SET_EXPENSES',
     expenses
 });
- 
 
-export const startSetExpenses = () => {
+export const startSetExpense = () => {
     return (dispatch) => {
         return database.ref('expenses')
             .once('value')
